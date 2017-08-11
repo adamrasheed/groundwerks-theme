@@ -1,0 +1,23 @@
+//  MAIN SCSS
+@import '01-global/00-reset',
+        '01-global/01-vars',
+        '01-global/02-mixins',
+        '01-global/03-typography',
+        '01-global/04-helpers',
+        '01-global/05-grid';
+
+@import '02-modules/01-buttons',
+        '02-modules/02-forms',
+        '02-modules/03-rte';
+
+@import '03-layout/01-header',
+        '03-layout/02-footer';
+
+@import '04-pages/01-home',
+        '04-pages/02-about',
+        '04-pages/03-services',
+        '04-pages/04-contact';
+
+
+// Test
+body{background: pink}

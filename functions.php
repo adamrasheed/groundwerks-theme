@@ -117,7 +117,7 @@ add_action( 'widgets_init', 'groundwerks_widgets_init' );
  * Enqueue scripts and styles.
  */
 function groundwerks_scripts() {
-	wp_enqueue_style( 'groundwerks-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'groundwerks-style', get_template_directory_uri() . '/css/main.css' );
 
 	wp_enqueue_script( 'groundwerks-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
