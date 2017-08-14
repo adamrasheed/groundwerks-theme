@@ -1,0 +1,143 @@
+.top-header{
+    background: $color-primary;
+
+    &__container{
+        justify-content: space-between;
+        padding: .5rem 1rem;
+    }
+
+    &__link {
+        color: $color-secondary;
+    }
+
+    &__link-icon{
+        background: $color-secondary;
+        color: white;
+        padding: .25rem;
+    }
+
+    &__link-text{
+        letter-spacing: .1em;
+        font-size: $font-size-small;
+        line-height: $lh-small;
+    }
+
+}
+
+.header{}
+
+.header__container{
+    @include flex(center, wrap);
+
+    @media #{$med} {
+        @include flex(space-between, nowrap);
+        align-items: center;
+
+        padding: 1rem;
+    }
+
+    @media #{$lrg}{
+        padding: 2rem 1rem;
+    }
+}
+
+.site-branding{
+    flex: 100%;
+
+    text-align: center;
+    margin-bottom: 2rem;
+    &:after{
+        content: '';
+        display: block;
+        width: 80%;
+        margin: 2rem auto 0;
+        height: 1px;
+        background: $color-text;
+    }
+
+    @media #{$med}{
+        flex: 0 auto;
+        text-align: left;
+        &:after{
+            display: none;
+        }
+    }
+}
+
+.site-description{
+    font-size: $font-size-small;
+    color: $color-text-light;
+}
+
+.main-navigation{
+    flex: 100%;
+
+    .menu{
+        @include flex(center, nowrap);
+        align-items: center;
+        list-style: none;
+        padding: 0;
+
+        .menu-item{
+            display: block;
+            flex: 1;
+            text-align: center;
+
+            a {
+                font-family: $font-family-heading;
+                letter-spacing: .05em;
+                color: $color-text;
+                position: relative;
+                transition: map-get( $trans, short );
+
+                &:after{
+                    position: absolute;
+                    content: '';
+                    background: $color-primary;
+                    padding: 2px 0 0;
+                    width: 0%;
+                    bottom: -.5rem;
+                    right: 0;
+                    left: 0;
+                    transition: map-get( $trans , short )
+                }
+                
+
+                &:hover, &:focus{
+                    color: $color-primary;
+
+                    &:after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media #{$med}{
+        flex: 0 auto;
+        .menu{
+            align-items: center;
+        }
+
+        .menu-item {
+            padding: .5rem 0 .5rem 2.5rem;
+        }
+    }
+}
+
+@media #{$med}{
+    .site-branding{
+        margin: 0;
+    }
+    .site-title{
+        margin: 0 0 .25rem;
+        padding: 0;
+    }
+
+    .site-description{
+        margin: 0;
+        padding: 0;
+    }
+}
+

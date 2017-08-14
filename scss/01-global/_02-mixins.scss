@@ -1,0 +1,8 @@
+//  Mixins
+
+@mixin flex($justify, $wrap){
+    display: flex;
+    justify-content: $justify;
+    align-items: flex-start;
+    flex-flow: row $wrap;
+}

@@ -1,0 +1,24 @@
+
+
+//  Bottom Footer
+.bottom-footer{
+    @include flex(space-between, nowrap);
+
+
+
+    &__credit{  
+        @include flex(center, nowrap);
+        align-items: center;
+    }
+
+    &__credit-copy{
+        display: block;
+        line-height: 1;
+        transform: translateY(-3px);
+    }
+
+    &__logo{
+        height: 1.5rem;
+        width: auto;
+    }
+}

@@ -14,18 +14,19 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'groundwerks' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'groundwerks' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'groundwerks' ), 'groundwerks', '<a href="http://creatix.io">Creatix Online Marketing</a>' );
-			?>
-		</div><!-- .site-info -->
+		
 	</footer><!-- #colophon -->
+	<div class="container bottom-footer">
+			<div class="bottom-footer__copyright">
+				<span>copyright © 200-<?php echo date('Y'); ?> GroundWerks</span>
+			</div>
+
+			<div class="bottom-footer__credit">
+				<span class="bottom-footer__credit-copy">Site by</span> <a href="http://creatix.io" target="_blank" class="bottom-footer__logo-link">
+				<img class='bottom-footer__logo' src="<?php echo get_bloginfo('template_directory') . '/img/creatix-logo.png' ?>" alt="Creatix Online Marketing">
+				</a>
+			</div>
+		</div><!-- .site-info
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

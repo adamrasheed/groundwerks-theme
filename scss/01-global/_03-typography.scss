@@ -1,0 +1,15 @@
+body{
+    font-size: $font-size-base;
+    line-height: $lh-base;
+    color: $color-text;
+    font-family: $font-family-base;
+    text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: $font-family-heading;
+}
+
+a{
+    text-decoration: none;
+}
