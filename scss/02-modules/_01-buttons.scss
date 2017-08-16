@@ -12,9 +12,10 @@
 
     &--primary{
         background: $color-primary;
+        color: $color-text;
 
-        &:hover{
-            background: lighten( $color-primary, 5% );
+        &:hover, &:focus{
+            background: lighten( $color-primary, 3% );
         }
     }
 }

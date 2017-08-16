@@ -3,6 +3,7 @@
 //Typography
 $font-size-base: 16px;
 $font-size-small: calc( 16px * 0.75); // 3/4 X base size
+$font-size-large: calc( 16px * 1.25); // 1.25 X base size
 
 $lh-base: 1.4;
 $lh-small: 1.25;
@@ -10,6 +11,9 @@ $lh-header: 1.2;
 
 $font-family-base: 'Lora', serif;
 $font-family-heading: 'Roboto Condensed', sans-serif;
+
+$font-weight-body: 400;
+$font-weight-bold: 600;
 
 
 

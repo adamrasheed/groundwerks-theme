@@ -1,23 +1,55 @@
+<?php 
+
+$hero_headline      = get_field('hero_headline');
+$hero_desc          = get_field('hero_description');
+$hero_cta           = get_field('hero_cta');
+
+$site_description   = get_field('site_description');
+
+?>
+
 <section class="section section--hero">
 
     <div class="container hero__container">
-        <div class="hero__info">
+        <div class="sml med--half hero__info">
             <h1 class="hero__title">
-                Get It Done Right The First Time
+                <?php if ($hero_headline) {
+                    echo $hero_headline;
+                } else {
+                    echo 'ENTER A HEADLINE';
+                } ?>
             </h1>
             <p class="hero__desc">
-                Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                <?php if ($hero_desc) {
+                    echo $hero_desc;
+                } else {
+                    echo 'ENTER A DESCRIPTION';
+                } ?>
             </p>
-            <a href="" class="btn btn--primary hero__cta">Contact Us Today</a>
+            <a href="" class="btn btn--primary hero__cta">
+                <?php if ($hero_cta) {
+                    echo $hero_cta;
+                } else {
+                    echo 'ENTER A CTA';
+                } ?>
+            </a>
         </div><!-- end info -->
 
-        <img src="" alt="" class="hero__img">
+        <div class="sml med--half hero__img-cont">
+            <img src="https://unsplash.it/800/600" alt="" class="hero__img">
+        </div>
     </div><!-- end hero container -->
 
 </section>
 
 <section>
-    <h2 class="center padding-1 tagline">
-        We are a Plumbing and Underground Plumbing Utilities Company
-    </h2>
+    <div class="container container--center">
+        <h2 class="center padding-1 tagline">
+            <?php if ($site_description) {
+                    echo $site_description;
+                } else {
+                    echo 'ENTER A DESCRIPTION';
+                } ?>
+        </h2>
+    </div>
 </section>

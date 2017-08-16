@@ -1,0 +1,22 @@
+.testimonial{
+
+    &__body{
+        margin: 0 0 1rem;
+        padding: 0;
+    }
+    
+    &__text{
+        font-style: italic;
+    }
+
+    &__name{
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        letter-spacing: .05em;
+        &:before{
+            content: '-';
+            padding-right: .125rem;
+        }
+    }
+}

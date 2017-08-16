@@ -18,12 +18,12 @@
 	</footer><!-- #colophon -->
 	<div class="container bottom-footer">
 			<div class="bottom-footer__copyright">
-				<span>copyright © 200-<?php echo date('Y'); ?> GroundWerks</span>
+				<span>copyright © <?php echo date('Y'); ?> GroundWerks</span>
 			</div>
 
 			<div class="bottom-footer__credit">
 				<span class="bottom-footer__credit-copy">Site by</span> <a href="http://creatix.io" target="_blank" class="bottom-footer__logo-link">
-				<img class='bottom-footer__logo' src="<?php echo get_bloginfo('template_directory') . '/img/creatix-logo.png' ?>" alt="Creatix Online Marketing">
+				<img class='bottom-footer__logo' src="<?php echo get_template_directory_uri() . '/img/creatix-logo.png' ?>" alt="Creatix Online Marketing">
 				</a>
 			</div>
 		</div><!-- .site-info

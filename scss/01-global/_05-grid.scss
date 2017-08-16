@@ -1,9 +1,41 @@
-.container{
+.container, .row{
     max-width: $container-size;
     margin: 0 auto;
-    padding: 0 1rem;
 
     @include flex(center, wrap);
 
+    &--center{
+        justify-content: center;
+    }
 
+    @media #{$med}{
+        @include flex(flex-start, wrap);
+        &--center{
+            justify-content: center;
+        }
+    }
+
+}
+
+
+.sml{
+    max-width: 100%;
+    flex: 0 100%;
+    padding: 0 1rem;
+}
+
+@media #{$med}{
+    .med{
+        &--half{
+            max-width: 50%;
+            flex: 50%;
+            padding: 0 1rem;
+        }
+
+        &--full{
+            max-width: 100%;
+            flex: 100%;
+            padding: 0 1rem;
+        }
+    }
 }

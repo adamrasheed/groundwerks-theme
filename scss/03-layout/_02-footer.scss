@@ -3,7 +3,9 @@
 //  Bottom Footer
 .bottom-footer{
     @include flex(space-between, nowrap);
-
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: $font-family-heading;
 
 
     &__credit{  

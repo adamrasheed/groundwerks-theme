@@ -1,3 +1,107 @@
 .tagline{
-    padding: 2rem 0;
+
+    border-bottom: solid 4px $color-text;
+    padding-bottom: 2rem;
+    margin: 2rem auto;
+
+    @media #{$med}{
+        margin: 4rem auto;
+    }
+}
+
+.section--hero{
+    background-image: #4B3539;
+    background-image: linear-gradient(134deg, #4B5359 0%, #262D33 100%);
+}
+
+
+.hero{
+    &__info{
+        color: white;
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+.home-contact__cta{
+    font-size: $font-size-base;
+    padding: 1rem 2rem;
+    
+}
+
+
+//  HOME TYPES
+
+.home-types{
+    @media #{$med}{
+        @include flex(flex-start, wrap)
+    }
+}
+
+.home-types__main{
+    display: block;
+    @include flex(center, nowrap);
+
+    @media #{$med}{
+        flex: 75%;
+    }
+}
+
+.home-type-main{
+    flex: 1;
+    padding: 0 1rem 1rem;
+
+    &__img{
+        max-width: 2rem;
+        height: auto;
+    }
+
+    &__hr{
+        border: 0;
+        height: 2px;
+        background: $color-text;
+    }
+
+    &__plumbing{
+        display: block;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+    }
+
+    @media #{$med}{
+        padding-top: 2rem;
+        &__img{
+            max-width: 3rem;
+        }
+    }
+
+    @media #{$med}{
+        &__img{
+            max-width: 4rem;
+        }
+    }
+}
+
+.home-types-other{
+    &__title{
+        margin-bottom: 0.5rem;
+    }
+    @media #{$med}{
+        flex: 25%;
+    }
+}
+
+
+.home-types-list{
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.home-type-item{
+    display: block;
+    margin-bottom: .5rem;
 }
