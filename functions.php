@@ -7,6 +7,13 @@
  * @package Ground_Werks
  */
 
+// Checking for ACF Options
+ if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
+
 if ( ! function_exists( 'groundwerks_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -121,7 +128,7 @@ function groundwerks_scripts() {
 
 	wp_enqueue_style( 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-	wp_enqueue_style( 'googe-fonts', 'https://fonts.googleapis.com/css?family=Lora:400,400i,700|Roboto+Condensed:400,700', array(), false);
+	wp_enqueue_style( 'googe-fonts', 'https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto+Condensed:400,700', array(), false);
 
 	wp_enqueue_script( 'groundwerks-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

@@ -10,7 +10,9 @@ $testimonial_img    = get_field('home_testimonial_image');
     <div class="container">
         <div class="sml med--half">
             <?php if($testimonial_img): ?>
-                '<img src=". echo $testimonial_img[img] ." alt="" class="testimonial__img">
+                <img src="<?php echo $testimonial_img['url'] ?>"
+                        alt="<?php echo $testimonial_img['alt'] ?>"
+                        class="testimonial__img">
             <?php else: ?>
                 <img src="https://unsplash.it/600/800" alt="" class="testimonial__img">
             <?php endif; ?>

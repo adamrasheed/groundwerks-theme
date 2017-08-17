@@ -1,10 +1,100 @@
 
+// Site Footer
+
+.footer{
+    margin: 1rem 0 0;
+
+    @media #{$med} {
+        margin: 2rem 0 0;
+    }
+
+    @media #{$lrg} {
+        margin: 4rem 0 0;
+    }
+}
+.footer-container{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    border-top: 2px solid $color-text;
+}
+
+.footer-column{
+    width: 50%;
+    flex: 50%;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+
+    & > h5 {
+        margin: 0 0 .125rem;
+        font-size: $font-size-base;
+        letter-spacing: 1px;
+    }
+
+    & > p {
+        margin: 0 0 1rem;
+        font-weight: light;
+        font-size: $font-size-small;
+        line-height: $lh-small;
+
+        a {
+            color: $color-text;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .menu {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .menu-item{
+        margin-bottom: 1rem;
+    }
+
+    .menu-item a{
+        @extend %menu-link;
+
+        &:hover{
+            color: $color-primary;
+        }
+    }
+
+    @media #{$med}{
+        width: 25%;
+        flex: 25%;
+
+        &--half{
+            width: 50%;
+            flex: 50%;
+        }
+    }
+
+    
+}
+
+.footer-social{
+    & > a {
+        color: $color-text;
+        font-size: $font-size-large;
+        transition: map-get( $trans, short );
+        display: inline-block;
+        padding-right: .5rem;
+
+        &:hover{
+            color: $color-primary;
+        }
+    }
+}
+
 
 //  Bottom Footer
 .bottom-footer{
     @include flex(space-between, nowrap);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
     font-family: $font-family-heading;
 
 

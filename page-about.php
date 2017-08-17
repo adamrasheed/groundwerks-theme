@@ -7,6 +7,7 @@ get_header(); ?>
 <?php
     //  Vars
 $desc       = get_field('about_description');
+$img       = get_field('about_image');
 $ms_desc    = get_field('mission_statement_description');
 ?>
 
@@ -19,6 +20,11 @@ $ms_desc    = get_field('mission_statement_description');
         <h1 class="title page-title"><?php echo wp_title(''); ?></h1>
 
         <p class="page-body">
+            <?php if($img): ?>
+                <img
+                    src="<?php echo $img['url']; ?>"
+                    alt="<?php echo $img['alt']; ?>">
+            <?php endif; ?>
             <?php echo $desc;?>
         </p>
 
@@ -29,11 +35,8 @@ $ms_desc    = get_field('mission_statement_description');
             </p>
         </div>
     </div>
-    <!-- 
-        // About Section s 
-        // About image
-        // Find Out Services
-    -->
+
+    
 
     </div>
 </div>

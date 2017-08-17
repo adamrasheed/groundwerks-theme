@@ -37,6 +37,15 @@ h4{
     line-height: 1.125rem;
 }
 
+%menu-link {
+    color: $color-text;
+    font-family: $font-family-heading;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
 
 @media #{$lrg}{
     h1{

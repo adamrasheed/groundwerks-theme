@@ -18,4 +18,9 @@
             background: lighten( $color-primary, 3% );
         }
     }
+
+    &--large{
+        font-size: $font-size-base;
+        padding: 1rem 2rem;
+    }
 }
