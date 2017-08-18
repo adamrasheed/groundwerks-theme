@@ -23,21 +23,21 @@ p {
 
 
 h1{
-    font-size: 2.5rem;
+    font-size: 2.441rem;
     line-height: 2.5rem;
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 1.953rem;
     line-height: 2.25rem;
 }
 
 h3{
-    font-size: 1.25rem;
+    font-size: 1.563rem;
     line-height: 1.5rem;
 }
 h4{
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.125rem;
 }
 
@@ -53,20 +53,20 @@ h4{
 
 @media #{$lrg}{
     h1{
-        font-size: 3.998rem;
-        line-height: 4.5rem;
+        font-size: 3.157rem;
+        line-height: 3.75rem;
     }
     h2{
-        font-size: 2.83rem;
-        line-height: 3rem;
+        font-size: 2.369rem;
+        line-height: 2.75rem;
     }
 
     h3{
-        font-size: 2rem;
-        line-height: 2.25rem;
+        font-size: 1.777rem;
+        line-height: 2rem;
     }
     h4{
-        font-size: 1.414rem;
+        font-size: 1.333rem;
         line-height: 1.75rem;
     }
 }

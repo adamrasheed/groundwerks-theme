@@ -10,7 +10,7 @@ $work_types         = 'home_work_types';
         <div class="sml sml--full">
             <h2 class="title home-types__title">Types of Work</h2>
         </div>
-        <div class="sml home-types__main">
+        <div class="sml sml--half home-types__main">
             <div class="home-type-main">
                 <img src="<?php echo get_template_directory_uri() . '/img/house.svg' ?>" alt="" class="home-type-main__img">
                 <hr class="home-type-main__hr">

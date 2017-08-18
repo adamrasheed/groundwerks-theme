@@ -8,6 +8,12 @@
 
     &__link {
         color: $color-text;
+
+        display: none;
+        @media only screen and (min-device-width : 640px) {
+            display: block;
+        }
+
     }
 
     &__link-icon{
@@ -17,15 +23,38 @@
         margin-right: .25rem;
     }
 
-    &__link-text{
-        display: inline-block;
-        letter-spacing: .1em;
+    &__link-text, &__mobile-link{
         font-family: $font-family-heading;
         font-size: $font-size-small;
         line-height: $lh-small;
+        letter-spacing: .1em
+    }
+
+    &__link-text{
+        display: inline-block;
         transform: translateY(-.125rem);
     }
 
+    &__mobile-link{
+        background: $color-text;
+        color: $color-white;
+        padding: .5rem 1rem;
+
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            display: block;
+        }
+
+        @media only screen and (min-device-width: 481px){
+            display: none;
+        }
+    }
+
+
+
+}
+
+.call-mobile{
+    
 }
 
 .header{}

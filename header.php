@@ -9,9 +9,7 @@
  * @package Ground_Werks
  */
 
- //	VARS
- $phone 	= get_field('company_phone', 'option');
- $email 	= get_field('company_email', 'option');
+ 
 
 ?>
 <!doctype html>
@@ -28,27 +26,8 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'groundwerks' ); ?></a>
 
-	<div class="top-header">
-		<div class="container top-header__container">
-			<a href="<?php echo $email; ?>"
-				target="_blank"
-				class="top-header__link">
-				<i class="top-header__link-icon fa fa-envelope-o" aria-hidden="true"></i>
-				<span class="top-header__link-text">
-					<?php echo $email; ?>
-				</span>
-			</a>
-
-			<a href="tel:<?php echo $phone; ?>"
-				target="_blank"
-				class="top-header__link">
-				<i class="top-header__link-icon fa fa-phone" aria-hidden="true"></i>
-				<span class="top-header__link-text">
-					<?php echo $phone; ?>
-				</span>
-			</a>
-		</div><!-- end top header container-->
-	</div>
+	<?php get_template_part( 'template-parts/header', 'top' ); ?>
+	
 
 	<header id="masthead" class="header site-header">
 		<div class="container header__container">

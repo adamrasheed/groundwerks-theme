@@ -1,8 +1,18 @@
 .tagline{
 
-    border-bottom: solid 4px $color-text;
-    padding-bottom: 2rem;
     margin: 2rem auto;
+
+    &__img{
+        display: block;
+        max-width: 4rem;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    &__desc{
+        border-bottom: solid 4px $color-text;
+        padding-bottom: 2rem;
+    }
 
     @media #{$med}{
         margin: 4rem auto;
@@ -19,29 +29,46 @@
         margin-bottom: 2rem;
     }
 
+    &__desc{
+        color: $color-white;
+        font-weight: $font-weight-light;
+        margin-bottom: 1.5rem;
+    }
+
 }
 
 
 //  HOME TYPES
 
 .home-types{
-    @media #{$med}{
+
+    @media #{$sml}{
         @include flex(flex-start, wrap)
     }
+
 }
 
 .home-types__main{
     display: block;
-    @include flex(center, nowrap);
+    @include flex(center, wrap);
+
+    @media #{$sml}{
+        flex: 1;
+        width: auto;
+    }
 
     @media #{$med}{
+        @include flex(center, nowrap);
         flex: 75%;
     }
 }
 
 .home-type-main{
-    flex: 1;
-    padding: 0 1rem 1rem;
+    flex-basis: 100;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 2rem;
+
 
     &__img{
         max-width: 2rem;
@@ -55,32 +82,39 @@
     }
 
     &__plumbing{
+        color: $color-text-semi;
         display: block;
-        font-size: 1rem;
-        text-transform: uppercase;
-        letter-spacing: .05em;
+        font-size: $font-size-small;
+        text-transform: lowercase;
+        font-variant: small-caps;
+        letter-spacing: .1em;
+    }
+
+    @media #{$sml}{
+
     }
 
     @media #{$med}{
-        padding-top: 2rem;
-        &__img{
-            max-width: 3rem;
-        }
-    }
-
-    @media #{$med}{
+        flex: 1;
+        padding: 1rem;
         &__img{
             max-width: 4rem;
         }
     }
+
 }
 
 .home-types-other{
+    width: 100%;
+    padding: 0 1rem;
+
     &__title{
+        line-height: 1.2;
         margin-bottom: 0.5rem;
     }
-    @media #{$med}{
-        flex: 25%;
+    @media #{$sml}{
+        flex: 50%;
+        max-width: 50%;
     }
 }
 
@@ -95,6 +129,7 @@
 .home-type-item{
     display: block;
     margin-bottom: .5rem;
+    color: $color-text-semi;
 }
 
 

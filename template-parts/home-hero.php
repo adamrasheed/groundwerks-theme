@@ -13,6 +13,7 @@ $site_description   = get_field('site_description');
 
     <div class="container hero__container">
         <div class="sml med--half hero__info">
+            
             <h1 class="hero__title">
                 <?php if ($hero_headline) {
                     echo $hero_headline;
@@ -20,6 +21,7 @@ $site_description   = get_field('site_description');
                     echo 'ENTER A HEADLINE';
                 } ?>
             </h1>
+
             <p class="hero__desc">
                 <?php if ($hero_desc) {
                     echo $hero_desc;
@@ -53,8 +55,12 @@ $site_description   = get_field('site_description');
 </section>
 
 <section>
-    <div class="container container--center">
-        <h2 class="center padding-1 tagline">
+    <div class="container container--center tagline">
+        <img
+        src="<?php echo get_template_directory_uri() . '/img/pipes.svg' ?>"
+        alt="Icon of Pipes"
+        class="tagline__img">
+        <h2 class="center padding-1 tagline__desc">
             <?php if ($site_description) {
                     echo $site_description;
                 } else {

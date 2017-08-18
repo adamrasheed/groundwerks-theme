@@ -84,7 +84,7 @@
 	</footer><!-- #colophon -->
 	<div class="container bottom-footer">
 			<div class="bottom-footer__copyright">
-				<span>copyright © <?php echo date('Y'); ?> GroundWerks</span>
+				<span>copyright &copy; <?php echo date('Y'); ?> GroundWerks</span>
 			</div>
 
 			<div class="bottom-footer__credit">

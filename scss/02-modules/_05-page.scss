@@ -18,3 +18,12 @@
         margin-bottom: 2rem;
     }
 }
+
+@media #{$med}{
+    .page-title{
+        margin-bottom: 2rem;
+    }
+    .page-subtitle{
+        margin-bottom: 3rem;
+    }
+}

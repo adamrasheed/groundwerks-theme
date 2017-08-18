@@ -1,0 +1,38 @@
+.contact{
+    &__img{
+        display: block;
+        margin-bottom: 2rem;
+    }
+}
+
+.form{
+    &__label{
+        display: block;
+        color: $color-text-light;
+        font-family: $font-family-heading;
+        font-size: $font-size-small;
+        text-transform: lowercase;
+        font-variant: small-caps;
+        letter-spacing: .15em;
+    }
+
+    &__input, &__email, &__message{
+        border: 1px solid $color-text;
+        display: block;
+        padding: .25rem;
+        font-size: $font-size-small;
+    }
+
+    &__submit{
+        border: none;
+        cursor: pointer;
+        display: block;
+        width: 12rem !important;
+    }
+}
+
+//  VENDOR
+
+.nf-form-fields-required {
+  display: none;
+}

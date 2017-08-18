@@ -24,6 +24,18 @@
     padding: 0 1rem;
 }
 
+@media #{$sml}{
+    max-width: 100%;
+    flex: 0 100%;
+    padding: 0 1rem;
+
+    .sml--half{
+        max-width: 50%;
+        flex: 50%;
+        padding: 0 1rem;
+    }
+}
+
 @media #{$med}{
     .med{
         &--half{
