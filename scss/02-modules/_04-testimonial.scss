@@ -1,8 +1,15 @@
 .testimonial{
 
+    &__img{
+        display: block;
+        margin-bottom: 2rem;
+    }
+
     &__body{
         margin: 0 0 1rem;
-        padding: 0;
+        padding: calc(2rem - 2px) 0 0;
+
+        box-shadow: inset 0px 2px 0px $color-primary;
     }
     
     &__text{

@@ -17,7 +17,7 @@ get_header(); ?>
             <h3 class="title page-subtitle">We Provide The Following Services:</h3>
 
             <?php if( have_rows($service_list)): ?>
-            <div class="services-list">
+            <div class="sml services-list">
                 <?php while( have_rows($service_list)): the_row(); ?>
                     <h5 class="service"><?php the_sub_field('service'); ?></h5>
                 <?php endwhile; ?>

@@ -1,0 +1,64 @@
+.project{
+    // background: lightblue;
+    margin-bottom: 2rem;
+    align-items: stretch;
+
+    &__info{
+        width: 100%;
+        flex: 100%;
+        @extend .section--dark;
+        padding: 1rem;
+    }
+
+    &__title{
+        margin: 0 0 .5rem;
+        color: white;
+    }
+
+    &__desc{
+        margin: 0 0 1rem;
+        color: $color-white;
+        font-size: $font-size-small;
+        font-weight: $font-weight-light;
+    }
+    &__gallery{
+        background: pink;
+        
+        width: 100%;
+        flex: 0 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-flow: row wrap;
+    }
+
+    &__img-link{
+        display: block;
+        flex: 50%;
+        height: 12rem;
+    }
+
+    &__img{
+        display: block;
+        flex: 40%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media #{$med}{
+        margin-bottom: 4rem;
+
+        &__info{
+            max-width: 20rem;
+        }
+
+        &__gallery{
+            flex: 1;
+        }
+    }
+
+    @media #{$lrg}{
+        margin-bottom: 6rem;
+    }
+}

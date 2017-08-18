@@ -17,6 +17,7 @@ $testimonial_img    = get_field('home_testimonial_image');
                 <img src="https://unsplash.it/600/800" alt="" class="testimonial__img">
             <?php endif; ?>
         </div>
+        
         <div class="sml med--half testimonial">
             <p class="testimonial__body">
                 <span class="testimonial__quote">&ldquo;</span>

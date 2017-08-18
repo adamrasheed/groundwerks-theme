@@ -10,6 +10,9 @@
     font-weight: $font-weight-body;
     font-size: $font-size-large;
     margin-bottom: .625rem;
-    text-align: center;
+
+    @media #{$med}{
+        text-align: center;
+    }
 
 }

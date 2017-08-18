@@ -4,10 +4,11 @@
     background: gray;
     font-size: $font-size-small;
     font-family: $font-family-heading;
-    text-transform: uppercase;
-    letter-spacing: .1em;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: .15em;
     text-align: center;
-    padding: .5rem 1rem;
+    padding: .625rem 1rem;
     transition: map-get( $trans, short );
 
     &--primary{
@@ -19,6 +20,14 @@
         }
     }
 
+    &--secondary{
+        background: $color-secondary;
+        color: $color-white;
+
+        &:hover, &:focus{
+            background: lighten( $color-secondary, 3% );
+        }
+    }
     &--large{
         font-size: $font-size-base;
         padding: 1rem 2rem;

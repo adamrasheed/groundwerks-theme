@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<p><a href="https://travis-ci.org/Automattic/_s"><img src="https://travis-ci.org/Automattic/_s.svg?branch=master" alt="Build Status" /></a></p>
+
+<h1 id="_s">_s</h1>
+
+<p>Custom WP theme for Ground Werks Construction Inc.</p>
+
+<h2 id="gettingstarted">Getting Started</h2>
+
+<p>If you want to keep it simple, head over to http://underscores.me and generate your <code>_s</code> based theme from there. You just input the name of the theme you want to create, click the &#8220;Generate&#8221; button, and you get your ready-to-awesomize starter theme.</p>
+
+<p>If you want to set things up manually, download <code>_s</code> from GitHub. The first thing you want to do is copy the <code>_s</code> directory and change the name to something else (like, say, <code>megatherium-is-awesome</code>), and then you&#8217;ll need to do a five-step find and replace on the name in all the templates.</p>
+
+<ol>
+<li>Search for <code>'_s'</code> (inside single quotations) to capture the text domain.</li>
+<li>Search for <code>_s_</code> to capture all the function names.</li>
+<li>Search for <code>Text Domain: _s</code> in style.css.</li>
+<li>Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks.</li>
+<li>Search for <code>_s-</code> to capture prefixed handles.</li>
+</ol>
+
+<p>OR</p>
+
+<ol>
+<li>Search for: <code>'_s'</code> and replace with: <code>'megatherium-is-awesome'</code></li>
+<li>Search for: <code>_s_</code> and replace with: <code>megatherium_is_awesome_</code></li>
+<li>Search for: <code>Text Domain: _s</code> and replace with: <code>Text Domain: megatherium-is-awesome</code> in style.css.</li>
+<li>Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Megatherium_is_Awesome</code></li>
+<li>Search for: <code>_s-</code> and replace with: <code>megatherium-is-awesome-</code></li>
+</ol>
+
+<p>Then, update the stylesheet header in <code>style.css</code> and the links in <code>footer.php</code> with your own information. Next, update or delete this readme.</p>
+
+<p>Now you&#8217;re ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)</p>
+
+<p>Good luck!</p>
+
+</body>
+</html>

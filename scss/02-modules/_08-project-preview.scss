@@ -1,0 +1,46 @@
+.home-projects{
+    &__info{
+        margin-bottom: 2rem;
+    }
+}
+
+.project-preview{
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24), 0px 2px 8px rgba(0, 0, 0, 0.16);
+
+    &__img{
+        display: block;
+        height: 12rem;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    &__info{
+        padding: 1rem;
+        @extend .section--dark;
+        color: white;
+        box-shadow: inset 0px 2px 0px $color-primary;
+    }
+
+    &__category{
+        font-size: $font-size-extra-small;
+        letter-spacing: .2em;
+        text-transform: lowercase;
+        font-variant: small-caps;
+        opacity: $font-opacity-semi;
+        margin: .5rem 0 .5rem;
+    }
+
+    &__title{
+        margin-bottom: 0.5rem;
+    }
+
+    &__desc{
+        opacity: $font-opacity-semi;
+        font-size: $font-size-small;
+        line-height: $lh-base;
+        margin: 0 0 .5rem;
+        color: $color-white;
+        font-weight: $font-weight-light;
+    }
+}

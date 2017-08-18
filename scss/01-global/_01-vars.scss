@@ -2,7 +2,8 @@
 
 //Typography
 $font-size-base: 16px;
-$font-size-small: calc( 16px * 0.75); // 3/4 X base size
+$font-size-small: calc( 16px * 0.875); // 3/4 X base size
+$font-size-extra-small: calc( 16px * .75); // 5/8 X base size
 $font-size-large: calc( 16px * 1.25); // 1.25 X base size
 
 $lh-base: 1.4;
@@ -13,13 +14,16 @@ $font-family-base: 'Lato', 'Helvetica',  sans-serif;
 $font-family-heading: 'Roboto Condensed', sans-serif;
 
 $font-weight-body: 400;
+$font-weight-light: 300;
 $font-weight-bold: 600;
 
-
+$font-opacity-semi: 0.7;
 
 //  Colors
-$color-text: #323333;
-$color-text-light: #4A4A4A;
+$color-text:        hsla(180, 1%, 20%, 1);
+$color-text-semi:   hsla(180, 1%, 20%, 0.8);
+$color-text-light:  #4A4A4A;
+$color-white:       hsla(360, 100%, 100%, 0.86);
 
 $color-primary:     #FCD253;
 $color-secondary:   #204969;

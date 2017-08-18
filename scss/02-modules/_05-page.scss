@@ -1,5 +1,20 @@
-.page-title{}
+.page-title{
+    margin-bottom: 0.5rem;
+}
 
 .page-subtitle{
     margin-bottom: 1rem;
+}
+
+.page-title, .page-subtitle{
+    padding: 0 1rem;
+}
+
+@media #{$med}{
+    .page-title{
+        margin-bottom: 1rem;
+    }
+    .page-subtitle{
+        margin-bottom: 2rem;
+    }
 }

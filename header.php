@@ -9,6 +9,10 @@
  * @package Ground_Werks
  */
 
+ //	VARS
+ $phone 	= get_field('company_phone', 'option');
+ $email 	= get_field('company_email', 'option');
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -26,14 +30,22 @@
 
 	<div class="top-header">
 		<div class="container top-header__container">
-			<a href="" class="top-header__link">
+			<a href="<?php echo $email; ?>"
+				target="_blank"
+				class="top-header__link">
 				<i class="top-header__link-icon fa fa-envelope-o" aria-hidden="true"></i>
-				<span class="top-header__link-text">email@email.com</span>
+				<span class="top-header__link-text">
+					<?php echo $email; ?>
+				</span>
 			</a>
 
-			<a href="" class="top-header__link">
+			<a href="tel:<?php echo $phone; ?>"
+				target="_blank"
+				class="top-header__link">
 				<i class="top-header__link-icon fa fa-phone" aria-hidden="true"></i>
-				<span class="top-header__link-text">(555)555-1234</span>
+				<span class="top-header__link-text">
+					<?php echo $phone; ?>
+				</span>
 			</a>
 		</div><!-- end top header container-->
 	</div>
