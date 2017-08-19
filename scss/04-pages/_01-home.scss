@@ -50,9 +50,10 @@
 
 .home-types__main{
     display: block;
-    @include flex(center, wrap);
+    @include flex(center, nowrap);
 
     @media #{$sml}{
+        @include flex(center, wrap);
         flex: 1;
         width: auto;
     }
@@ -60,25 +61,30 @@
     @media #{$med}{
         @include flex(center, nowrap);
         flex: 75%;
+        width: auto;
     }
 }
 
 .home-type-main{
     flex-basis: 100;
     width: 100%;
-    padding: 0;
+    padding: 0 .5rem;
     margin-bottom: 2rem;
 
 
     &__img{
         max-width: 2rem;
         height: auto;
+        margin-left: .25rem;
+    }
+
+    &__title{
+        font-size: $font-size-large;
+        line-height: $lh-base;
     }
 
     &__hr{
-        border: 0;
-        height: 2px;
-        background: $color-text;
+        display: none;
     }
 
     &__plumbing{
@@ -91,14 +97,41 @@
     }
 
     @media #{$sml}{
+        &__title{
+            font-size: $font-size-large;
+            line-height: $lh-base;
+        }
+
+        &__hr{
+            display: block;
+            border: 0;
+            height: 1px;
+            background: $color-text;
+        }
 
     }
 
     @media #{$med}{
         flex: 1;
         padding: 1rem;
+        &__title{
+            font-size: 1.563rem;
+            line-height: 1.5rem;
+        }
+
         &__img{
             max-width: 4rem;
+        }
+
+        &__hr{
+            height: 2px;
+        }
+    }
+
+    @media #{$lrg}{
+        &__title{
+            font-size: 1.777rem;
+            line-height: 2rem;
         }
     }
 
@@ -115,6 +148,11 @@
     @media #{$sml}{
         flex: 50%;
         max-width: 50%;
+    }
+
+    @media #{$med}{
+        flex: 25%;
+        max-width: 25%;
     }
 }
 
